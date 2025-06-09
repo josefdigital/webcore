@@ -1,0 +1,17 @@
+@import "../variables";
+@import "../mixins/sections";
+
+.service-section {
+  @include section-color($black-pearl, $light-grey);
+  @include section-padding();
+  @include header-section();
+  &__details {
+    @include paragraph-section();
+    @include section-margin($default-margin*4);
+  }
+  .service-card {
+    h5 {
+      color: $black-pearl
+    }
+  }
+}

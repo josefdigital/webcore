@@ -1,0 +1,13 @@
+.footer {
+  position: relative;
+  z-index: 20;
+  @include section-padding();
+  @include section-color($aqua, $baltic-sea);
+  @include header-section(left);
+  &__copyright {
+    @include orbitron-factory(400);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,34 @@
+@import "../variables";
+@import "shadows";
+@import "../functions/measurements";
+
+
+@mixin form() {
+  background-color: $black-pearl;
+  color: $aqua;
+  border-radius: get-px($default-border-radius);
+  padding: get-px($default-padding);
+  @include box-shadow();
+  .form-control {
+    margin-bottom: get-px($default-margin);
+  }
+  label {
+    font-size: 16px;
+    font-weight: 400;
+    color: $aqua;
+  }
+  textarea, input {
+    background-color: $baltic-sea;
+    color: $aqua;
+    border: 1px solid $dull-green;
+    &active, &:focus {
+      background-color: $baltic-sea;
+      color: $aqua;
+      border: 1px solid $dull-green;
+    }
+  }
+  // Honeypot field
+  #username, #usernameLabel {
+    display: none;
+  }
+}

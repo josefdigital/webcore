@@ -1,0 +1,50 @@
+$bootstrap-icons-font-src: url("../../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2") format("woff2"), url("../../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff") format("woff");
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/boostrap-queries/index";
+
+// Variables
+@import "variables";
+
+// Functions
+@import "functions/measurements";
+
+// Mixins
+@import "mixins/sections";
+@import "mixins/cards";
+@import "mixins/buttons";
+@import "mixins/links";
+@import "mixins/forms";
+@import "mixins/fonts";
+
+// Fonts
+@import "fonts/orbitron";
+
+// Classes
+@import "classes/buttons";
+@import "classes/cards";
+@import "classes/links";
+@import "classes/forms";
+
+// Resets
+@import "resets";
+
+// Partials
+@import "partials/navbar";
+@import "partials/footer";
+@import "partials/hero-section";
+@import "partials/info-section";
+@import "partials/product-section";
+@import "partials/what-we-do-section";
+@import "partials/service-section";
+@import "partials/contact-us-section";
+@import "partials/connect-section";
+@import "partials/flash";
+@import "partials/single-page-flyer";
+@import "partials/flyer";
+@import "partials/product-advert-1";
+@import "partials/product-advert-2";
+
+// Routes
+@import "routes/home";
+@import "routes/single-page";

@@ -1,0 +1,80 @@
+@import "../variables";
+@import "../functions/measurements";
+@import "../mixins/buttons";
+@import "shadows";
+
+@mixin card(
+  $background-color: $white,
+  $color: $dark-blue,
+  $button-background-color: $grey,
+  $button-background-shadow-color: $grey-shadow,
+  $button-color: $white,
+) {
+    position: relative;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap!important;
+    background-color: $background-color;
+    width: 100%;
+    @include box-shadow();
+    border-radius: get-px($default-border-radius);
+    padding: get-px($default-padding/2);
+    margin-bottom: get-px($default-margin);
+    @include screen-medium() {
+      min-height: 448px;
+    }
+
+    border: none; /* reset */
+    a {
+      text-decoration: none;
+    }
+    h4 {
+      margin-top: get-px($default-margin);
+      font-size: 16px!important; /* TODO fix */
+      overflow-wrap: break-word;
+      font-weight: 600;
+      margin-bottom: 7px!important; /* TODO fix */
+      color: $color;
+    }
+    h5 {
+      font-size: 13px;
+      font-weight: 500;
+      overflow-wrap: break-word;
+      display: block;
+      width: 100%;
+      margin-top: get-px($default-margin*2);
+    }
+    &__img {
+      width: 100%;
+      height: 170px;
+      border-radius: get-px($default-border-radius);
+      background-size: cover;
+      background-position: center;
+      margin-bottom: get-px($default-margin);
+    }
+
+    h6 {
+      font-size: 15px;
+      font-weight: 600;
+      color: $color;
+      overflow-wrap: break-word;
+    }
+    p {
+      font-size: 12px;
+      font-weight: 400;
+      @include screen-medium() {
+        font-weight: 300;
+      }
+      color: $color;
+      overflow-wrap: break-word;
+    }
+    transition: all .3s linear;
+
+    &__button {
+      margin-top: auto;
+      width: 100%;
+      display: block;
+      text-align: center;
+      @include button($button-background-color, $button-background-shadow-color, $button-color);
+    }
+}

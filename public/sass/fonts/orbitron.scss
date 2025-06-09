@@ -1,0 +1,50 @@
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900
+@import "../mixins/fonts";
+
+@font-face {
+  @include orbitron-font("Regular", 400);
+}
+
+@font-face {
+  @include orbitron-font("Medium", 500);
+}
+
+@font-face {
+  @include orbitron-font("SemiBold", 600);
+}
+
+@font-face {
+  @include orbitron-font("Bold", 700);
+}
+
+@font-face {
+  @include orbitron-font("ExtraBold", 800);
+}
+
+@font-face {
+  @include orbitron-font("Black", 900);
+}
+
+//p, a, small, .orbitron-regular {
+//  @include orbitron-factory(400);
+//}
+//h5, h6, .orbitron-medium {
+//  @include orbitron-factory(500);
+//}
+//
+//h4, .orbitron-semi-bold {
+//  @include orbitron-factory(600);
+//}
+//
+//h3, b, .orbitron-bold {
+//  @include orbitron-factory(700);
+//}
+//
+//h2, .orbitron-x-bold {
+//  @include orbitron-factory(800);
+//}
+//
+//h1, .orbitron-black {
+//  @include orbitron-factory(900);
+//}

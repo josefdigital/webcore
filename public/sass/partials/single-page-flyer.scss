@@ -1,0 +1,40 @@
+@import "../variables";
+@import "../mixins/sections";
+
+.single-page-flyer-section {
+  @include section-padding();
+  @include section-color($black-pearl, $white);
+  @include header-section(left);
+  h1 {
+    color: $dark-blue;
+    text-align: center;
+    font-size: 28px;
+    @include margin-bottom($default-margin);
+    @include screen-medium() {
+      margin-bottom: get-px($default-margin*2);
+      font-size: 40px;
+      font-weight: 500;
+    }
+    @include screen-large() {
+      font-size: 45px;
+      font-weight: 600;
+    }
+    @include screen-extra-large() {
+      font-size: 50px;
+      font-weight: 600;
+    }
+    @include screen-extra-extra-large() {
+      font-size: 67px;
+      font-weight: 600;
+    }
+  }
+  .flyer {
+    margin-bottom: get-px($default-margin);
+    @include screen-medium() {
+      margin-bottom: get-px($default-margin*2);
+    }
+  }
+  &__link {
+    @include button-advert();
+  }
+}

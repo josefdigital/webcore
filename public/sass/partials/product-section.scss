@@ -1,0 +1,15 @@
+@import "../variables";
+@import "../mixins/sections";
+
+.product-section {
+   @include section-padding();
+   @include section-color($good-night, $black-pearl);
+   @include header-section(left);
+   h3 {
+      color: $aqua;
+      text-align: center;
+      @include screen-medium() {
+         text-align: inherit;
+      }
+   }
+}

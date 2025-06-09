@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="321px" height="321px" viewBox="0 0 321 321" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Logo</title>
+    <g id="▶️--Grid" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Square-Logo" transform="translate(-89.000000, -89.000000)">
+            <g id="Logo" transform="translate(89.000000, 89.000000)">
+                <text id="J" font-family="HelveticaNeue-Thin, Helvetica Neue" font-size="269" font-weight="300" letter-spacing="27.6205357" fill="#00CEC9">
+                    <tspan x="0" y="264">J</tspan>
+                </text>
+                <g id="D" transform="translate(137.000000, 0.000000)">
+                    <text font-family="Orbitron-Bold, Orbitron" font-size="224" font-weight="bold" fill="#55EFC4">
+                        <tspan x="0" y="226">D</tspan>
+                    </text>
+                    <rect id="Rectangle" fill="#00F3C2" x="11" y="248" width="165" height="29" rx="8"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

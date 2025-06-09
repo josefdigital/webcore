@@ -1,0 +1,25 @@
+@import "../variables";
+@import "../mixins/sections";
+
+
+.info-section {
+  @include section-padding();
+  @include section-color($light-aqua-green, $black-pearl);
+  @include header-section();
+  &__img-wrapper {
+    display: flex;
+    justify-content: center;
+    @include section-margin($default-margin*3);
+    img {
+      width: 100%;
+      @include screen-medium() {
+        width: 75%;
+      }
+      @include screen-large() {
+        width: 50%;
+      }
+      height: auto;
+    }
+  }
+  @include paragraph-section();
+}

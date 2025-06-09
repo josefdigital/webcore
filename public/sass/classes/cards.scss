@@ -1,0 +1,68 @@
+@import "../variables";
+@import "../mixins/cards";
+
+
+
+.product-card {
+  @include card($baltic-sea, $light-aqua-green);
+  justify-content: center;
+  h5 {
+    color: $aqua;
+  }
+  &--hover {
+    &:hover {
+      background: rgba(0, 0, 0, 0.05);
+      box-shadow: none;
+    }
+  }
+  .product-card__img {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+  }
+  p, h5, h6 {
+    text-align: center;
+  }
+}
+
+.what-we-do-card {
+  @include card($white, $black-pearl);
+  justify-content: center;
+  .product-card__img {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+.service-card {
+  @include card($white, $baltic-sea);
+  a {
+    @include orbitron-factory(400);
+  }
+  h5 {
+    @include orbitron-factory(600);
+    font-size: 20px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+}

@@ -1,0 +1,18 @@
+{{ define "what_we_do_section" }}
+    <section class="what-we-do-section">
+        <h3>Strategic Partnerships</h3>
+        <div class="container">
+            <div class="what-we-do-section__details">
+                <p><b>When your in-house team is maxed out, we step in — fast.</b>
+                    Deadlines, product launches, campaigns — we get it. We offer flexible, short-term developer support to help you deliver under pressure without burning out your core team.</p>
+            </div>
+            <div class="row">
+                {{ range .Strategies }}
+                    <div class="col-md-4">
+                        {{ template "what_we_do_card" . }}
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+{{ end }}

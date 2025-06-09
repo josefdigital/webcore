@@ -1,0 +1,21 @@
+{{ define "hero_section" }}
+    <section class="hero-section" id="heroSection" style="background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+     url(/static/imgs/hero.jpg);"
+    >
+        <div class="hero-section__brand">
+            <div class="hero-section__brand__img">
+                <img src="/static/imgs/BlockLogo.png" alt="">
+            </div>
+
+            <h2>We design & build modern, scalable digital products from websites to mobile apps, crafted with precision, speed, & care</h2>
+        </div>
+        <div class="hero-section__button-container">
+            <a href="#" class="button button--light button--lg" id="heroBtn">Contact Us</a>
+            <a href="https://platform.josef.digital/register" class="button button--dark button--lg" id="heroBtn">Sign Up</a>
+        </div>
+
+    </section>
+        {{ template "contact_us_flash" . }}
+        {{ template "subscribe_flash" . }}
+{{ end }}

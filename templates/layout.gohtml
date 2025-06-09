@@ -1,0 +1,62 @@
+{{ define "layout" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Primary Meta Tags -->
+    <title>Josef Digital</title>
+    <meta name="title" content="Josef Digital – London based Digital Agency">
+    <meta name="description" content="We build fast, modern web platforms using Go, Python, and AI. From MVPs to scalable architectures, Josef Digital is your technical partner.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://josef.digital/">
+    <meta property="og:title" content="Josef Digital – Full Stack Web & AI Engineering">
+    <meta property="og:description" content="We build fast, modern web platforms using Go, Python, and AI. From MVPs to scalable architectures, Josef Digital is your technical partner.">
+    <meta property="og:image" content="https://josef.digital/static/img/cover.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://josef.digital/">
+    <meta name="twitter:title" content="Josef Digital – Full Stack Web & AI Engineering">
+    <meta name="twitter:description" content="We build fast, modern web platforms using Go, Python, and AI. From MVPs to scalable architectures, Josef Digital is your technical partner.">
+    <meta name="twitter:image" content="https://josef.digital/static/img/cover.png">
+
+    <!-- Standard Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/imgs/favicon-16x16.png">
+    <link rel="shortcut icon" href="/static/imgs/favicon.ico">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/imgs/apple-touch-icon.png">
+
+    <!-- Android Chrome -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/static/imgs/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/static/imgs/android-chrome-512x512.png">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/static/imgs/site.webmanifest">
+
+    <!-- TrustBox script -->
+    <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+    <!-- End TrustBox script -->
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://josef.digital/" />
+    <title>{{ .Title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/main.bundle.css">
+</head>
+<body>
+    {{ template "navbar" . }}
+    {{ block "content" . }}{{ end }}
+    {{ template "footer" . }}
+    <script src="/static/js/vendor.bundle.js"></script>
+    <script src="/static/js/bootstrap.bundle.js"></script>
+    <script src="/static/js/main.bundle.js"></script>
+</body>
+</html>
+{{ end }}

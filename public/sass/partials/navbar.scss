@@ -1,0 +1,45 @@
+@import "../variables";
+
+.navbar {
+  background-color: $black-pearl;
+  @include orbitron-factory(400);
+  .nav-left {
+    a {
+      color: $aqua;
+      &:hover {
+        color: $dull-green;
+      }
+      text-align: center;
+      @include screen-large() {
+        text-align: start;
+      }
+    }
+  }
+
+  .navbar-brand {
+    img {
+      width: 134px;
+      height: auto;
+    }
+  }
+  .nav-right {
+    .button {
+      text-align: center;
+      margin-bottom: get-px($default-margin);
+      @include screen-large() {
+        padding-left: get-px($default-padding);
+        padding-right: get-px($default-padding);
+        margin-bottom: 0;
+        &:first-child {
+          margin-right: get-px($default-margin/2);
+        }
+      }
+    }
+  }
+
+  /* Resets */
+  .navbar-toggler {
+    background-color: $aqua;
+  }
+
+}

@@ -1,0 +1,17 @@
+{{ define "single_page_flyer" }}
+    <section class="single-page-flyer-section">
+        <div class="container">
+            <h1>Single Page Lander</h1>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    {{ template "flyer" . }}
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="single-page-flyer-section__link">
+                <a href="/#contactUs" class="button button--light button--lg" id="heroBtn">Book My Slot</a>
+            </div>
+        </div>
+    </section>
+{{ end }}

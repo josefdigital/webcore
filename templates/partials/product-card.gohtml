@@ -1,0 +1,11 @@
+{{ define "product_card" }}
+    <div class="product-card">
+        <h4>{{ .Heading }}</h4>
+        <h5>{{ .SubHeading }}</h5>
+        <div class="product-card__img">
+            <img src="{{ .Image }}" alt="">
+        </div>
+        <h6>{{ .ProductHeading }}</h6>
+        <p>{{ .Details }}</p>
+    </div>
+{{ end }}

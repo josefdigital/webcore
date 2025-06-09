@@ -1,0 +1,78 @@
+.product-advert-2 {
+  z-index: 3;
+  position: relative;
+  @include section-padding();
+  @include section-color($dark-blue, $coastal-breeze);
+  &__inner {
+    &__bg {
+      @include screen-medium() {
+        position: absolute;
+        background-image: url(/static/imgs/chelgate.jpg);
+        top: 0;
+        left: 0;
+        width: 50vw;
+        height: 100%;
+        background-size: 100%;
+        background-position: right top;
+        background-repeat: no-repeat;
+        z-index: 2;
+        border-radius: 8px;
+        clip-path: polygon(
+                        0% 0%,
+                        100% 30%,
+                        100% 100%,
+                        0% 70%
+        );
+      }
+    }
+    &__right {
+      h3 {
+        font-size: 23px;
+        margin-bottom: get-px($default-margin);
+        @include screen-medium() {
+          margin-bottom: get-px($default-margin*2);
+          font-size: 37px;
+        }
+        @include screen-large() {
+          margin-bottom: get-px($default-margin*3);
+          font-size: 59px;
+        }
+        font-weight: 600;
+
+      }
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        margin-bottom: get-px($default-margin);
+        @include screen-medium() {
+          font-weight: 300;
+          font-size: 17px;
+          margin-bottom: get-px($default-margin*2);
+        }
+        @include screen-large() {
+          font-size: 20px;
+          margin-bottom: get-px($default-margin*3);
+        }
+
+      }
+      &__link {
+        @include button-advert();
+        width: auto;
+
+      }
+    }
+    &__col {
+      display: none;
+      @include screen-medium() {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        font-size: 14px;
+        font-weight: 300;
+      }
+
+    }
+  }
+
+}
+

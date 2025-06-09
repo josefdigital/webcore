@@ -1,0 +1,53 @@
+{{ define "connect_section" }}
+    <section class="connect-section">
+        <div class="container">
+            <h3>Connect Section</h3>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="connect-section__social-row">
+                        <a href="https://x.com/josef_digital" class="connect-section__social-row__icon">
+                            <img src="/static/imgs/twitter.svg" alt="">
+                        </a>
+                        <a href="https://www.linkedin.com/company/107222494" class="connect-section__social-row__icon">
+                            <img src="/static/imgs/linkedin.svg" alt="">
+                        </a>
+                        <a href="https://github.com/josefdigital" class="connect-section__social-row__icon">
+                            <img src="/static/imgs/github.svg" alt="">
+                        </a>
+                        <!-- <a href="#" class="connect-section__social-row__icon">
+                            <img src="/static/imgs/instagram.svg" alt="">
+                        </a> -->
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="connect-section__email">
+                <div class="connect-section__email__icon">
+                    <img src="/static/imgs/envelope.svg" alt="">
+                </div>
+                <a href="mailto:contact@josef.digital">contact@josef.digital</a>
+            </div>
+            <div class="connect-section__subscribe">
+                <p>Subscribe for news letter & get updates from the best services & deals!</p>
+                <div class="connect-section__subscribe__form" id="subscribe">
+                    <form action="/emails" method="POST">
+                        <input class="form-control" type="email" name="email" placeholder="Your Email">
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- TrustBox widget - Review Collector -->
+            <div class="trustpilot-widget" data-locale="en-GB" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="6839c9dd6fe43e3b6ec5b1b2" data-style-height="52px" data-style-width="100%">
+                <a href="https://uk.trustpilot.com/review/josef.digital" target="_blank" rel="noopener">Trustpilot</a>
+            </div>
+            <!-- End TrustBox widget -->
+            
+           <div class="connect-section__logo">
+               <img src="/static/imgs/Connect-Logo.png" alt="">
+           </div> 
+
+        </div>
+    </section>
+{{ end }}

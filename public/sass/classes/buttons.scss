@@ -1,0 +1,12 @@
+@import "../variables";
+@import "../mixins/buttons";
+
+.button {
+  @include button($aqua, $dull-green, $baltic-sea);
+}
+
+.button-form-fix {
+  position: relative;
+  display: block;
+  height: 44px;
+}

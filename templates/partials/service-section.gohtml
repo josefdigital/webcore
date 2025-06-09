@@ -1,0 +1,18 @@
+{{ define "service_section" }}
+    <section class="service-section">
+        <div class="container">
+            <h3>Services Designed to Move You Forward</h3>
+           <div class="service-section__details">
+               <p><b>We help you think clearly, build smartly, and move fast.</b>
+                   Josef Digital delivers flexible, high-impact services designed to meet your business where it is — whether you need early-stage clarity, a full product build, or dependable reinforcement during busy cycles.</p>
+           </div>
+            <div class="row">
+                {{ range .Services }}
+                    <div class="col-md-4">
+                        {{ template "service_card" . }}
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+{{ end }}
