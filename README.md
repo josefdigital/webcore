@@ -85,6 +85,19 @@ import "github.com/josefdigital/webcore"
 
 ---
 
+## The `examples/` Directory
+
+The `examples/` directory contains a complete working application demonstrating how to use `webcore` in a real-world scenario. It includes:
+
+- A main.go file bootstrapping the app
+- Sass and TypeScript source files in `public/`
+- Webpack and build configs 
+- Precompiled assets in `static/`
+- A sample layout and many reusable HTML partials under `templates/`
+- A Dockerfile and Makefile for local builds and deployment
+
+This example app serves as both a starter template and a functional demo of how to build websites using `webcore`.
+
 ## 📄 License
 
 MIT
