@@ -1,6 +1,6 @@
 # WebCore
 
-**WebCore** is a lightweight starter web framework built on top of [Gomek](https://github.com/joegasewicz/gomek), providing a structured base for Go web applications.
+**WebCore** is a lightweight starter web framework built on top of [Gomek](https://github.com/josefdigital/gomek), providing a structured base for Go web applications.
 
 It comes with:
 
