@@ -44,7 +44,7 @@ func (w *Webcore) Run() {
 	app := gomek.New(c)
 
 	// Static files
-	staticFiles := http.FileServer(http.Dir("../static"))
+	staticFiles := http.FileServer(http.Dir("static"))
 	app.Handle("/static/", http.StripPrefix("/static/", staticFiles))
 
 	// Web

@@ -15,10 +15,10 @@ WORKDIR /app
 
 COPY --from=builder /app/web .
 COPY templates ./templates
-COPY static ./static
+COPY examples/static ./static
 
 COPY templates ./templates
-COPY static ./static
+COPY examples/static ./static
 
 EXPOSE 8081
 
