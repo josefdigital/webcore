@@ -7,11 +7,19 @@ import (
 	"net/http"
 )
 
-type Webcore struct {
+type WebcoreConfig struct {
+	HomeTemplate string
+	Port         int
 }
 
-func NewWebcore() *Webcore {
-	return &Webcore{}
+type Webcore struct {
+	Config WebcoreConfig
+}
+
+func NewWebcore(c WebcoreConfig) *Webcore {
+	return &Webcore{
+		Config: c,
+	}
 }
 
 func (w *Webcore) Run() {
@@ -51,7 +59,7 @@ func (w *Webcore) Run() {
 	app.Route("/").
 		View(views.HomeHandler).
 		Methods("GET", "POST").
-		Templates("../templates/routes/home.gohtml")
+		Templates(w.getHomeTemplate())
 
 	app.Route("/emails").
 		Resource(&views.Email{}).
@@ -70,6 +78,13 @@ func (w *Webcore) Run() {
 	app.Use(middleware.RateLimiter)
 	//app.Use(middleware.FontHeaders)
 	app.Host = "0.0.0.0"
-	app.Listen(8081)
+	app.Listen(w.Config.Port)
 	app.Start()
+}
+
+func (w *Webcore) getHomeTemplate() string {
+	if w.Config.HomeTemplate != "" {
+		return w.Config.HomeTemplate
+	}
+	return "../templates/routes/home.gohtml"
 }
